@@ -1917,17 +1917,25 @@ input[type="radio"]+label:before {
     }
 }
 
-.icon.style1 {
+.icon.style1,
+.ai.style1 {
     color: #00ffcc;
     /*f2849e */
 }
 
-.icon.style2 {
+.icon.style2,
+.ai.style2 {
     color: #00f0ff;
 }
 
-.icon.style3 {
+.icon.style3,
+.ai.style3 {
     color: #76ddff;
+}
+
+.icon.style4,
+.ai.style4 {
+    color: #ffffff;
 }
 
 
@@ -2689,12 +2697,12 @@ button:disabled,
     width: 100%;
     max-width: 68em;
     margin: 0 auto;
-    padding: 5em 2.5em;
+    padding: 5em 1em;
 }
 
 @media screen and (max-width: 736px) {
     #wrapperproject>*>.inner {
-        padding: 2.5em 1.25em;
+        padding: 2.5em 1em;
     }
 }
 
@@ -2723,7 +2731,11 @@ button:disabled,
 }
 
 .wrapper.alt {
-    padding: 0;
+    padding: 3em 0 1em 0;
+}
+
+.wrapper.pro {
+    padding: 1em 0 1em 0;
 }
 
 .wrapper.style-social {
@@ -4232,12 +4244,12 @@ body.is-preload #banner:after {
 /* Main - project page */
 
 #mainII {
-    padding: 0em 0 5em 0;
+    padding: 0em 0 2em 0;
 }
 
 @media screen and (max-width: 736px) {
     #mainII {
-        padding: 0em 0 4em 0;
+        padding: 0em 0 1em 0;
     }
 }
 
