@@ -2001,7 +2001,7 @@ input[type="radio"]+label:before {
 
 .image.left,
 .image.right {
-    max-width: 40%;
+    max-width: 30%;
 }
 
 .image.left img,
@@ -2055,6 +2055,12 @@ input[type="radio"]+label:before {
 
 .image.main img {
     width: 100%;
+}
+
+.cropped1 {
+    height: 30em;
+    /* height of container */
+    object-fit: cover;
 }
 
 
@@ -4277,6 +4283,19 @@ body.is-preload #banner:after {
     background-image: linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/unsplash/alvaro-reyes-qWwpHwip31M-unsplash.jpg");
     background-attachment: fixed;
     background-position: center -9em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+#main #crea {
+    padding: 12em 0 12em 0;
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/unsplash/kristopher-roller-PC_lbSSxCZE-unsplash.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/unsplash/kristopher-roller-PC_lbSSxCZE-unsplash.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/unsplash/kristopher-roller-PC_lbSSxCZE-unsplash.jpg");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/unsplash/kristopher-roller-PC_lbSSxCZE-unsplash.jpg");
+    background-attachment: fixed;
+    background-position: center -5em;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
