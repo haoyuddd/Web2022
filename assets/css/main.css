@@ -4352,6 +4352,19 @@ body.is-preload #banner:after {
     text-align: center;
 }
 
+#main #illus {
+    padding: 12em 0 12em 0;
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/");
+    background-attachment: fixed;
+    background-position: center -9em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
 #main #photog {
     padding: 12em 0 12em 0;
     background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/photography/thumbnail-photog.jpeg");
