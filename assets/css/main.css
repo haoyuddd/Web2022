@@ -2029,6 +2029,40 @@ input[type="radio"]+label:before {
     width: 100%;
 }
 
+.image.fitII {
+    display: block;
+    margin-bottom: 2em;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image.fitII img {
+    width: 100%;
+}
+
+.image.fitIII {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.image.fitIII img {
+    width: 100%;
+}
+
+.image.fitIV {
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+}
+
+.image.fitIV img {
+    width: 100%;
+}
+
 .image.crop {
     display: block;
     margin: 0 0 2em 0;
@@ -2776,6 +2810,11 @@ button:disabled,
 
 .wrapper.alt {
     padding: 3em 0 1em 0;
+}
+
+.wrapper.style6 {
+    background-color: #f8d300;
+    padding: 1em 0 1em 0;
 }
 
 .wrapper.pro {
