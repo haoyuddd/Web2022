@@ -3,12 +3,11 @@ Personal Website 2022
 
 From html5up.net
 
-Template Spectral
-Combined with 
-Template Future Imperfect
+	Template Spectral
+	Combined with 
+	Template Future Imperfect
 
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-
 
 Credits:
 

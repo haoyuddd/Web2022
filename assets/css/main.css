@@ -3171,6 +3171,7 @@ button:disabled,
     .wrapper.style1 .features li {
         border-top-color: rgba(0, 0, 0, 0.125);
     }
+    .wrapper.style1 h2 {}
 }
 
 
@@ -3178,6 +3179,89 @@ button:disabled,
 
 .wrapper.style2 {
     background-color: #2e3842;
+}
+
+.wrapper.style2 ::-webkit-input-placeholder {
+    color: #a6e0db !important;
+}
+
+.wrapper.style2 :-moz-placeholder {
+    color: #a6e0db !important;
+}
+
+.wrapper.style2 ::-moz-placeholder {
+    color: #a6e0db !important;
+}
+
+.wrapper.style2 :-ms-input-placeholder {
+    color: #a6e0db !important;
+}
+
+.wrapper.style2 .formerize-placeholder {
+    color: #a6e0db !important;
+}
+
+.wrapper.style2 .icon.major {
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.wrapper.style2 ul.alt li {
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.wrapper.style2 table tbody tr {
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.wrapper.style2 table tbody tr:nth-child(2n+1) {
+    background-color: rgba(255, 255, 255, 0.075);
+}
+
+.wrapper.style2 table th {
+    color: #ffffff;
+}
+
+.wrapper.style2 table thead {
+    border-color: rgba(0, 0, 0, 0.125);
+}
+
+.wrapper.style2 table tfoot {
+    border-color: rgba(0, 0, 0, 0.125);
+}
+
+.wrapper.style2 table.alt tbody tr td {
+    border-color: rgba(0, 0, 0, 0.125);
+}
+
+.wrapper.style2 input[type="submit"],
+.wrapper.style2 input[type="reset"],
+.wrapper.style2 input[type="button"],
+.wrapper.style2 button,
+.wrapper.style2 .button {
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.125);
+    color: #ffffff;
+}
+
+.wrapper.style2 input[type="submit"]:hover,
+.wrapper.style2 input[type="reset"]:hover,
+.wrapper.style2 input[type="button"]:hover,
+.wrapper.style2 button:hover,
+.wrapper.style2 .button:hover {
+    background-color: rgba(255, 255, 255, 0.075);
+}
+
+.wrapper.style2 input[type="submit"]:active,
+.wrapper.style2 input[type="reset"]:active,
+.wrapper.style2 input[type="button"]:active,
+.wrapper.style2 button:active,
+.wrapper.style2 .button:active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 736px) {
+    .wrapper.style2 .features li {
+        border-top-color: rgba(0, 0, 0, 0.125);
+    }
 }
 
 
@@ -4368,14 +4452,14 @@ body.is-preload #banner:after {
     text-align: center;
 }
 
-#main #crea {
+#main #visuala {
     padding: 12em 0 12em 0;
-    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/unsplash/kristopher-roller-PC_lbSSxCZE-unsplash.jpg");
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/unsplash/kristopher-roller-PC_lbSSxCZE-unsplash.jpg");
-    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/unsplash/kristopher-roller-PC_lbSSxCZE-unsplash.jpg");
-    background-image: linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/unsplash/kristopher-roller-PC_lbSSxCZE-unsplash.jpg");
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/starskyC.jpeg");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/starskyC.jpeg");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/starskyC.jpeg");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/starskyC.jpeg");
     background-attachment: fixed;
-    background-position: center -5em;
+    background-position: center -4em;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
