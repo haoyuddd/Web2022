@@ -6133,3 +6133,194 @@ body.is-touch .tiles2 article .content {
         margin: 1.25em 0 0 0;
     }
 }
+
+
+/* RUUULLLLEEEEsss for label */
+
+.author-archive {
+    padding: 1.5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.author-archive * ol {
+    list-style: none;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 a {
+    transition: all 0.1s;
+}
+
+h1 a:hover {
+    background: var(--green);
+    color: var(--white);
+}
+
+input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+}
+
+
+/* FILTERS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.filters {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.filters * {
+    display: inline-block;
+}
+
+.filters label {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.25rem;
+    border-radius: 2rem;
+    min-width: 50px;
+    line-height: normal;
+    cursor: pointer;
+    transition: all 0.1s;
+    color: #252525;
+}
+
+.filters label:hover {
+    background: var(--green);
+    color: #00ecbd;
+}
+
+
+/* FILTERED ELEMENTS (POSTS)
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* .posts {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+} */
+
+
+/* .posts .posta {
+    background: #fafafa;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.posts .posta-title {
+    font-size: 1.3rem;
+}
+
+.posts .posta-title:hover {
+    text-decoration: underline;
+} */
+
+
+/* .posts figcaption {
+    padding: 1rem;
+} */
+
+
+/* .masonry-grid figcaption {
+    padding: 1rem;
+} */
+
+
+/* .posts .posta-categories {
+    margin-bottom: 0.75rem;
+    font-size: 0.75rem;
+}
+
+.posts .posta-categories * {
+    display: inline-block;
+}
+
+.posts .posta-categories li {
+    margin-bottom: 0.2rem;
+}
+
+.posts .posta-categories a {
+    padding: 0.2rem 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid;
+    line-height: normal;
+    transition: all 0.1s;
+}
+
+.posts .posta-categories a:hover {
+    background: var(--green);
+    color: var(--white);
+} */
+
+
+/*  */
+
+
+/* FILTERING RULES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+[value="All"]:checked~.filters [for="All"],
+[value="CSS"]:checked~.filters [for="CSS"],
+[value="JavaScript"]:checked~.filters [for="JavaScript"],
+[value="jQuery"]:checked~.filters [for="jQuery"],
+[value="WordPress"]:checked~.filters [for="WordPress"],
+[value="Slider"]:checked~.filters [for="Slider"],
+[value="fullPage.js"]:checked~.filters [for="fullPage.js"] {
+    background: var(--green);
+    color: var(--white);
+}
+
+[value="All"]:checked~.categoryposts [data-category] {
+    display: block;
+}
+
+[value="CSS"]:checked~.categoryposts .categorypost:not([data-category~="CSS"]),
+[value="JavaScript"]:checked~.categoryposts .categorypost:not([data-category~="JavaScript"]),
+[value="jQuery"]:checked~.categoryposts .categorypost:not([data-category~="jQuery"]),
+[value="WordPress"]:checked~.categoryposts .categorypost:not([data-category~="WordPress"]),
+[value="Slider"]:checked~.categoryposts .categorypost:not([data-category~="Slider"]),
+[value="fullPage.js"]:checked~.categoryposts .categorypost:not([data-category~="fullPage.js"]) {
+    display: none;
+}
+
+
+/* FOOTER
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* footer {
+    font-size: 1rem;
+    padding: 0 1.5rem;
+    text-align: right;
+  }
+  
+  footer span {
+    color: #e31b23;
+  } */
+
+
+/* MQ
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+    .categoryposts {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    html {
+        font-size: 14px;
+    }
+    .categoryposts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
