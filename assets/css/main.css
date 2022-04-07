@@ -6272,7 +6272,7 @@ input[type="radio"] {
 }
 
 [value="Portrait"]:checked~.masonry-grid .categorypost:not([data-category*="Portrait"]),
-[value="travel"]:checked~.masonry-grid .categorypost:not([data-category*="Travel"]),
+[value="Travel"]:checked~.masonry-grid .categorypost:not([data-category*="Travel"]),
 [value="Analog"]:checked~.masonry-grid .categorypost:not([data-category*="Analog"]),
 [value="Documentary"]:checked~.masonry-grid .categorypost:not([data-category*="Documentary"]),
 [value="Impression"]:checked~.masonry-grid .categorypost:not([data-category*="Impression"]) {
