@@ -2845,9 +2845,14 @@ button:disabled,
     }
 }
 
+
+/* Wrapper - masonry */
+
 .wrappermasonry {
     display: grid;
-    padding: 4em 0 4em 0;
+    padding: 1.5em;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .wrappermasonry>.inner {
@@ -5457,7 +5462,8 @@ ul.posts article header> :last-child {
 /* Masonry Order */
 
 .masonry {
-    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    display: grid;
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
     grid-gap: 10px;
     grid-auto-rows: 0;
 }
@@ -5474,6 +5480,10 @@ ul.posts article header> :last-child {
     }
 }
 
+.masonry-item {
+    transition: filter .25s ease-in-out;
+}
+
 
 /* Masonry */
 
@@ -5484,6 +5494,13 @@ ul.posts article header> :last-child {
     column-gap: 1rem;
     /* Misc */
     width: 100%;
+}
+
+.masonry-grid2 {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 0;
 }
 
 .masonry-grid.special {
@@ -5503,12 +5520,12 @@ ul.posts article header> :last-child {
 }
 
 .masonry-grid__item ul,
-.masonry-item ul {
+.masonry-grid2 ul {
     font-size: 0.7em;
 }
 
 .masonry-grid article,
-.masonry article {
+.masonry-grid2 {
     -moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
     -webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
     -ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
@@ -5517,7 +5534,7 @@ ul.posts article header> :last-child {
 }
 
 .masonry-grid article>.image,
-.masonry article>.image {
+.masonry-grid2>.image {
     -moz-transition: -moz-transform 0.5s ease;
     -webkit-transition: -webkit-transform 0.5s ease;
     -ms-transition: -ms-transform 0.5s ease;
@@ -5530,13 +5547,13 @@ ul.posts article header> :last-child {
 }
 
 .masonry-grid article>.image img,
-.masonry article>.image img {
+.masonry-grid2>.image img {
     display: block;
     width: 100%;
 }
 
 .masonry-grid article>.image:before,
-.masonry article>.image:before {
+.masonry-grid2>.image:before {
     pointer-events: none;
     -moz-transition: background-color 0.5s ease, opacity 0.5s ease;
     -webkit-transition: background-color 0.5s ease, opacity 0.5s ease;
@@ -5555,7 +5572,7 @@ ul.posts article header> :last-child {
 }
 
 .masonry-grid article>.image:after,
-.masonry article>.image:after {
+.masonry-grid2>.image:after {
     pointer-events: none;
     -moz-transition: opacity 0.5s ease;
     -webkit-transition: opacity 0.5s ease;
@@ -5576,7 +5593,7 @@ ul.posts article header> :last-child {
 }
 
 .masonry-grid article>a,
-.masonry article>a {
+.masonry-grid2>a {
     display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
@@ -5612,22 +5629,22 @@ ul.posts article header> :last-child {
 }
 
 .masonry-grid article>a> :last-child,
-.masonry article>a> :last-child {
+.masonry-grid2>a> :last-child {
     margin: 0;
 }
 
 .masonry-grid article>a:hover,
-.masonry article>a:hover {
+.masonry-grid2>a:hover {
     color: #ffffff !important;
 }
 
 .masonry-grid article>a h2,
-.masonry article>a h2 {
+.masonry-grid2>a h2 {
     margin: 0;
 }
 
 .masonry-grid article>a .content,
-.masonry article>a .content {
+.masonry-grid2>a .content {
     -moz-transition: max-height 0.5s ease, opacity 0.5s ease;
     -webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
     -ms-transition: max-height 0.5s ease, opacity 0.5s ease;
@@ -5640,7 +5657,7 @@ ul.posts article header> :last-child {
 }
 
 .masonry-grid article>a .content> :last-child,
-.masonry article>a .content> :last-child {
+.masonry-grid2>a .content> :last-child {
     margin-bottom: 0;
 }
 
@@ -5648,7 +5665,7 @@ ul.posts article header> :last-child {
 /* when hover, show animation */
 
 body:not(.is-touch) .masonry-grid article:hover>.image,
-body:not(.is-touch) .masonry article:hover>.image {
+body:not(.is-touch) .masonry-grid2:hover>.image {
     -moz-transform: scale(0.98);
     -webkit-transform: scale(0.98);
     -ms-transform: scale(0.98);
@@ -5656,7 +5673,7 @@ body:not(.is-touch) .masonry article:hover>.image {
 }
 
 body:not(.is-touch) .masonry-grid article:hover>.image:before,
-body:not(.is-touch) .masonry article:hover>.image:before {
+body:not(.is-touch) .masonry-grid2:hover>.image:before {
     background-color: #333333;
     opacity: 0.35;
 }
@@ -5667,12 +5684,12 @@ body:not(.is-touch) .masonry-grid.special article:hover>.image:before {
 }
 
 body:not(.is-touch) .masonry-grid article:hover>.image:after,
-body:not(.is-touch) .masonry article:hover>.image:after {
+body:not(.is-touch) .masonry-grid2:hover>.image:after {
     opacity: 0;
 }
 
 body:not(.is-touch) .masonry-grid article:hover .content,
-body:not(.is-touch) .masonry article:hover .content {
+body:not(.is-touch) .masonry-grid2:hover .content {
     max-height: 15em;
     opacity: 1;
 }
@@ -5683,7 +5700,7 @@ body:not(.is-touch) .masonry article:hover .content {
 }
 
 body.is-preload .masonry-grid article,
-body.is-preload .masonry article {
+body.is-preload .wrappermasonry {
     -moz-transform: scale(0.9);
     -webkit-transform: scale(0.9);
     -ms-transform: scale(0.9);
@@ -5692,7 +5709,7 @@ body.is-preload .masonry article {
 }
 
 body.is-touch .masonry-grid article .content,
-body.is-touch .masonry article .content {
+body.is-touch .wrappermasonry .content {
     max-height: 15em;
     opacity: 1;
 }
