@@ -2845,6 +2845,28 @@ button:disabled,
     }
 }
 
+.wrappermasonry {
+    display: grid;
+    padding: 4em 0 4em 0;
+}
+
+.wrappermasonry>.inner {
+    width: 80em;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1280px) {
+    .wrappermasonry>.inner {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .wrappermasonry>.inner {
+        width: 100%;
+    }
+}
+
 
 /* Wrapper - drawing */
 
@@ -4560,7 +4582,7 @@ body.is-preload #banner:after {
 }
 
 
-/* Main - project page */
+/* Main - project page/photo page */
 
 #mainII {
     padding: 0em 0 2em 0;
@@ -5432,6 +5454,27 @@ ul.posts article header> :last-child {
 }
 
 
+/* Masonry Order */
+
+.masonry {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-gap: 10px;
+    grid-auto-rows: 0;
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .masonry {
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .masonry {
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+    }
+}
+
+
 /* Masonry */
 
 .masonry-grid {
@@ -5459,7 +5502,13 @@ ul.posts article header> :last-child {
     margin-bottom: 1rem;
 }
 
-.masonry-grid article {
+.masonry-grid__item ul,
+.masonry-item ul {
+    font-size: 0.7em;
+}
+
+.masonry-grid article,
+.masonry article {
     -moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
     -webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
     -ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
@@ -5467,7 +5516,8 @@ ul.posts article header> :last-child {
     position: relative;
 }
 
-.masonry-grid article>.image {
+.masonry-grid article>.image,
+.masonry article>.image {
     -moz-transition: -moz-transform 0.5s ease;
     -webkit-transition: -webkit-transform 0.5s ease;
     -ms-transition: -ms-transform 0.5s ease;
@@ -5479,12 +5529,14 @@ ul.posts article header> :last-child {
     overflow: hidden;
 }
 
-.masonry-grid article>.image img {
+.masonry-grid article>.image img,
+.masonry article>.image img {
     display: block;
     width: 100%;
 }
 
-.masonry-grid article>.image:before {
+.masonry-grid article>.image:before,
+.masonry article>.image:before {
     pointer-events: none;
     -moz-transition: background-color 0.5s ease, opacity 0.5s ease;
     -webkit-transition: background-color 0.5s ease, opacity 0.5s ease;
@@ -5502,7 +5554,8 @@ ul.posts article header> :last-child {
     opacity: 0.8;
 }
 
-.masonry-grid article>.image:after {
+.masonry-grid article>.image:after,
+.masonry article>.image:after {
     pointer-events: none;
     -moz-transition: opacity 0.5s ease;
     -webkit-transition: opacity 0.5s ease;
@@ -5522,7 +5575,8 @@ ul.posts article header> :last-child {
     z-index: 2;
 }
 
-.masonry-grid article>a {
+.masonry-grid article>a,
+.masonry article>a {
     display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
@@ -5557,19 +5611,23 @@ ul.posts article header> :last-child {
     z-index: 3;
 }
 
-.masonry-grid article>a> :last-child {
+.masonry-grid article>a> :last-child,
+.masonry article>a> :last-child {
     margin: 0;
 }
 
-.masonry-grid article>a:hover {
+.masonry-grid article>a:hover,
+.masonry article>a:hover {
     color: #ffffff !important;
 }
 
-.masonry-grid article>a h2 {
+.masonry-grid article>a h2,
+.masonry article>a h2 {
     margin: 0;
 }
 
-.masonry-grid article>a .content {
+.masonry-grid article>a .content,
+.masonry article>a .content {
     -moz-transition: max-height 0.5s ease, opacity 0.5s ease;
     -webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
     -ms-transition: max-height 0.5s ease, opacity 0.5s ease;
@@ -5581,21 +5639,24 @@ ul.posts article header> :last-child {
     opacity: 0;
 }
 
-.masonry-grid article>a .content> :last-child {
+.masonry-grid article>a .content> :last-child,
+.masonry article>a .content> :last-child {
     margin-bottom: 0;
 }
 
 
 /* when hover, show animation */
 
-body:not(.is-touch) .masonry-grid article:hover>.image {
+body:not(.is-touch) .masonry-grid article:hover>.image,
+body:not(.is-touch) .masonry article:hover>.image {
     -moz-transform: scale(0.98);
     -webkit-transform: scale(0.98);
     -ms-transform: scale(0.98);
     transform: scale(0.98);
 }
 
-body:not(.is-touch) .masonry-grid article:hover>.image:before {
+body:not(.is-touch) .masonry-grid article:hover>.image:before,
+body:not(.is-touch) .masonry article:hover>.image:before {
     background-color: #333333;
     opacity: 0.35;
 }
@@ -5605,20 +5666,24 @@ body:not(.is-touch) .masonry-grid.special article:hover>.image:before {
     opacity: 0.35;
 }
 
-body:not(.is-touch) .masonry-grid article:hover>.image:after {
+body:not(.is-touch) .masonry-grid article:hover>.image:after,
+body:not(.is-touch) .masonry article:hover>.image:after {
     opacity: 0;
 }
 
-body:not(.is-touch) .masonry-grid article:hover .content {
+body:not(.is-touch) .masonry-grid article:hover .content,
+body:not(.is-touch) .masonry article:hover .content {
     max-height: 15em;
     opacity: 1;
 }
 
-*+.masonry-grid {
+*+.masonry-grid,
+*+.masonry {
     margin-top: 2em;
 }
 
-body.is-preload .masonry-grid article {
+body.is-preload .masonry-grid article,
+body.is-preload .masonry article {
     -moz-transform: scale(0.9);
     -webkit-transform: scale(0.9);
     -ms-transform: scale(0.9);
@@ -5626,7 +5691,8 @@ body.is-preload .masonry-grid article {
     opacity: 0;
 }
 
-body.is-touch .masonry-grid article .content {
+body.is-touch .masonry-grid article .content,
+body.is-touch .masonry article .content {
     max-height: 15em;
     opacity: 1;
 }
