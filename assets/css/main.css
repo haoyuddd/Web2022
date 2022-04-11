@@ -1603,7 +1603,13 @@ pre code {
 
 /* Section/Article */
 
-section.special,
+section.special h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+}
+
 article.special {
     text-align: center;
 }
@@ -3129,6 +3135,12 @@ button:disabled,
     .wrapper.style-social .features li {
         border-top-color: rgba(0, 0, 0, 0.125);
     }
+    .wrapper.style-social .icons {
+        font-size: 0.7em;
+    }
+    .wrapper.style-social p {
+        font-size: 0.9em;
+    }
 }
 
 
@@ -3298,7 +3310,12 @@ button:disabled,
     .wrapper.style1 .features li {
         border-top-color: rgba(0, 0, 0, 0.125);
     }
-    .wrapper.style1 h2 {}
+    .wrapper.style1 .icons {
+        font-size: 0.7em;
+    }
+    .wrapper.style1 p {
+        font-size: 0.9em;
+    }
 }
 
 
@@ -4632,6 +4649,7 @@ body.is-preload #banner:after {
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+    color: #ffffff;
 }
 
 #main #visuala {
@@ -4645,6 +4663,7 @@ body.is-preload #banner:after {
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+    color: #ffffff;
 }
 
 #main #calli {
@@ -4658,6 +4677,7 @@ body.is-preload #banner:after {
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+    color: #ffffff;
 }
 
 #main #illus {
@@ -4671,6 +4691,7 @@ body.is-preload #banner:after {
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+    color: #ffffff;
 }
 
 #main #photog {
@@ -4684,6 +4705,36 @@ body.is-preload #banner:after {
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 920px) {
+    #main #calli,
+    #proje,
+    #visuala,
+    #photog {
+        padding: 7em 3em 7em 3em;
+        height: auto;
+        min-height: 0;
+    }
+    #main #calli h2 {
+        font-size: 2em;
+    }
+    #main #proje h2 {
+        font-size: 2em;
+    }
+    #main #visuala h2 {
+        font-size: 2em;
+    }
+    #main #photog h2 {
+        font-size: 2em;
+    }
+    #main #calli br {
+        display: none;
+    }
+    #main #calli .more {
+        display: none;
+    }
 }
 
 
@@ -4860,10 +4911,10 @@ body.landing #page-wrapper {
 }
 
 body.landing #page-wrapper-calli {
-    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/Calligraphy/profile-calligraphy.jpg");
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/Calligraphy/profile-calligraphy.jpg");
-    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/Calligraphy/profile-calligraphy.jpg");
-    background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/Calligraphy/profile-calligraphy.jpg");
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/Calligraphy/thumbnail-calli.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/Calligraphy/thumbnail-calli.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/Calligraphy/thumbnail-calli.jpg");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/Calligraphy/thumbnail-calli.jpg");
     background-attachment: fixed;
     background-position: center top;
     background-repeat: no-repeat;
