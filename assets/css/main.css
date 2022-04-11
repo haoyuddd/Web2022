@@ -1235,6 +1235,15 @@ pre code {
         box-sizing: border-box;
         align-items: stretch;
     }
+    #mobiledisplay>.col-3 {
+        width: 100%;
+    }
+    #mobiledisplay>.col-5 {
+        width: 100%;
+    }
+    #mobiledisplay>.col-7 {
+        width: 100%;
+    }
     .row>* {
         box-sizing: border-box;
     }
@@ -1292,8 +1301,8 @@ pre code {
     .row>.off-5-small {
         margin-left: 41.66667%;
     }
-    .row>.col-6-small {
-        width: 50%;
+    .row>.col-6 {
+        width: 100%;
     }
     .row>.off-6-small {
         margin-left: 50%;
