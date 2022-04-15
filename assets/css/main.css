@@ -4728,7 +4728,8 @@ body.is-preload #banner:after {
     #main #calli,
     #proje,
     #visuala,
-    #photog {
+    #photog,
+    #drawi {
         padding: 7em 3em 7em 3em;
         height: auto;
         min-height: 0;
@@ -4743,6 +4744,9 @@ body.is-preload #banner:after {
         font-size: 2em;
     }
     #main #photog h2 {
+        font-size: 2em;
+    }
+    #main #drawi h2 {
         font-size: 2em;
     }
     #main #calli br {
