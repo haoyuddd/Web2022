@@ -6447,3 +6447,58 @@ input[type="radio"] {
     background: var(--green);
     color: #00ecbd;
 }
+
+
+/* Timeline */
+
+.timeline {
+    /* Used to position the left vertical line */
+    position: relative;
+}
+
+.timeline__line {
+    /* Border */
+    border-right: 2px solid #aaa;
+    /* Positioned at the left */
+    left: 16px;
+    position: absolute;
+    top: 0px;
+    /* Take full height */
+    height: 100%;
+}
+
+.timeline__items {
+    /* Reset styles */
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.timeline__item {
+    margin-bottom: 8px;
+}
+
+.timeline__top {
+    /* Center the content horizontally */
+    align-items: center;
+    display: flex;
+}
+
+.timeline__circle {
+    /* Rounded border */
+    background-color: rgb(170, 170, 170);
+    border-radius: 1em;
+    /* Size */
+    height: 1em;
+    width: 1em;
+}
+
+.timeline__title {
+    /* Take available width */
+    flex: 1;
+}
+
+.timeline__desc {
+    /* Make it align with the title */
+    margin-left: 48px;
+}
