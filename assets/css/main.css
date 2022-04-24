@@ -2962,6 +2962,11 @@ button:disabled,
     padding: 1em 0 1em 0;
 }
 
+.wrapper.style7 {
+    background-color: #0d142a;
+    padding: 1em 0 1em 0;
+}
+
 .wrapper.pro {
     padding: 1em 0 1em 0;
 }
@@ -3638,6 +3643,10 @@ strong>a:hover {
 
 .wrapper.style4 {
     background-color: transparent;
+}
+
+.wrapper.style4 h4 {
+    color: #4E4852;
 }
 
 
