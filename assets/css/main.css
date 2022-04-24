@@ -6462,9 +6462,9 @@ input[type="radio"] {
 
 .timeline__line {
     /* Border */
-    border-right: 2px solid #aaa;
+    border-right: 1px solid #aaa;
     /* Positioned at the left */
-    left: 16px;
+    left: 0.7em;
     position: absolute;
     top: 0px;
     /* Take full height */
@@ -6474,12 +6474,12 @@ input[type="radio"] {
 .timeline__items {
     /* Reset styles */
     list-style-type: none;
-    margin: 0px;
-    padding: 0px;
+    margin: 0em;
+    padding: 0em;
 }
 
 .timeline__item {
-    margin-bottom: 8px;
+    margin-bottom: 1em;
 }
 
 .timeline__top {
@@ -6493,16 +6493,29 @@ input[type="radio"] {
     background-color: rgb(170, 170, 170);
     border-radius: 1em;
     /* Size */
-    height: 1em;
-    width: 1em;
+    height: 0.6em;
+    width: 0.6em;
+}
+
+.timeline__time {
+    /* Take available width */
+    padding-left: 1em;
+    flex: 1;
 }
 
 .timeline__title {
-    /* Take available width */
+    padding-left: 1.6em;
     flex: 1;
 }
 
 .timeline__desc {
     /* Make it align with the title */
-    margin-left: 48px;
+    margin-left: 3em;
+}
+
+#timelinetime {
+    color: #636363;
+    font-size: 0.8em;
+    margin: 0;
+    line-height: normal;
 }
