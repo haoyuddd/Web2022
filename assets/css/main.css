@@ -2564,6 +2564,18 @@ button:disabled,
         height: 3.75em;
         line-height: 3.75em;
     }
+    .button.style2 {
+        background-color: #ffffff63;
+        /* --style4 */
+        box-shadow: none !important;
+        color: #ffffff !important;
+    }
+    .button.primary {
+        background-color: #41e6c2;
+        /* --style4 */
+        box-shadow: none !important;
+        color: #ffffff !important;
+    }
 }
 
 
