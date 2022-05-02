@@ -4172,6 +4172,8 @@ body.single #blogwrapper {
         -ms-transform: translateX(16.5em);
         transform: translateX(16.5em);
         width: 16.5em;
+        background: #44c4a8ea;
+        color: #ffffff;
     }
     #menu>.inner {
         padding: 2.75em 1.5em;
