@@ -2548,7 +2548,6 @@ input[type="reset"]:disabled,
 input[type="button"].disabled,
 input[type="button"]:disabled,
 button.disabled,
-button:disabled,
 .button.disabled,
 .button:disabled {
     pointer-events: none;
@@ -4715,6 +4714,20 @@ body.is-preload #banner:after {
     background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/Calligraphy/thumbnail-calli.jpg");
     background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/Calligraphy/thumbnail-calli.jpg");
     background-image: linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/Calligraphy/thumbnail-calli.jpg");
+    background-attachment: fixed;
+    background-position: center -9em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+}
+
+#main #calliworkshop {
+    padding: 12em 0 12em 0;
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/Calligraphy/workshop/workshop15.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/Calligraphy/workshop/workshop15.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/Calligraphy/workshop/workshop15.jpg");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/Calligraphy/workshop/workshop15.jpg");
     background-attachment: fixed;
     background-position: center -9em;
     background-repeat: no-repeat;
