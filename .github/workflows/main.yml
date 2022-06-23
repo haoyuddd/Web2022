@@ -36,5 +36,5 @@ jobs:
           echo test, and deploy your project.
           
           - name: Create Issue Branch
-  uses: robvanderleek/create-issue-branch@v1.5
+            uses: robvanderleek/create-issue-branch@v1.5
 
